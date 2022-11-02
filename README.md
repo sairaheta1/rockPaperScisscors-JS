@@ -12,4 +12,9 @@
   - Inline code using attributes and values
 ---
 ## Time Taken:
+---
+## Future additions:
+  - input validator
+  - GUI
+  - options to keep playing
 
