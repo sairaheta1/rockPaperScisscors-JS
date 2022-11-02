@@ -1,1 +1,11 @@
-Game Plan for Rock, Paper, Scissors:
+Game Plan for Rock, Paper, Scissors
+
+Requirements:
+must start off with retreiving computer's selection
+must create a function that plays a single round of the game
+  - function will take in playerSelection and computerSelection as parameters
+the playerSelection parameter should be case-insensitive
+  - playerSelection will use prompt to get input from user
+must create a game() function that will play the game for 5 rounds
+
+
