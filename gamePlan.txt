@@ -9,3 +9,43 @@ the playerSelection parameter should be case-insensitive
 must create a game() function that will play the game for 5 rounds
 
 
+PseudoCode:
+retrieve computer's selection
+  use random number generator to create selection
+    1 for rock
+    2 for paper
+    3 for scissors
+
+retrieve user's selection
+  prompt user for game selection
+  convert their selection to all lowercase
+  convert their selection to number equivalent
+  save user's selection into variable
+
+play five rounds of the game
+  loop through a single round of the game
+    compare computerSelection and usersSelection
+      if selections are the same
+        return tie
+
+      else if player selected rock(1)
+        (could use switch statements instead of conditionals)
+        if computer selected scissors(3)
+          return player won
+        else
+          return computer won
+
+      else if player selected paper(2)
+        if computer selected rock(1)
+          return player won
+        else
+          return computer won
+      
+      else if player selected Scissors(3)
+        if computer selected rock(1)
+          return computer won
+        else
+          return player won
+
+end game
+
