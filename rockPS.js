@@ -10,7 +10,16 @@ function getUserSelection() {
   //is there a way to have a default value if nothing or blank is typed in?
 return result
 }
-
+function convertToNum(string) {
+  if (string === "rock") {
+    return 1;
+  }
+  else if (string === "paper") {
+    return 2;
+  }
+  return 3;
+}
+  
 //values will already be converted to their number representations once this function is called
 function playRound(playerSelection, computerSelection) {
   if (playerSelection == computerSelection) {
