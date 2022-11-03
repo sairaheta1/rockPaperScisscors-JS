@@ -39,3 +39,13 @@ function playRound(playerSelection, computerSelection) {
     return "You won!";
   }
 }
+
+function game() {
+  let computerSelection = getComputerSelection();
+
+  let playerSelection = convertToNum(getUserSelection); //still need to create conversion function
+
+  for (i = 0; i < 5; i++) {
+    playRound(playerSelection, computerSelection);
+  }
+}
