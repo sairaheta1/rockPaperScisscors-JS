@@ -10,5 +10,32 @@ function getUserSelection() {
   //is there a way to have a default value if nothing or blank is typed in?
 return result
 }
-console.log(getComputerSelection());
-console.log(getUserSelection());
+
+//values will already be converted to their number representations once this function is called
+function playRound(playerSelection, computerSelection) {
+  if (playerSelection == computerSelection) {
+    return "You and the computer tied!";
+  }
+  else if (playerSelection == 1) {
+    if (computerSelection == 3) {
+      return "You won!";
+    }
+  
+    return "Sorry! Looks like the computer beat you :("
+  
+  }
+  else if (playerSelection == 2) {
+    if (computerSelection == 1) {
+      return "You won!";
+    }
+   
+    return "Sorry! Looks like the computer beat you :(";
+  
+  }
+  else {
+    if (computerSelection == 1) {
+      return "Sorry! Looks like the computer beat you :(";
+    }
+    return "You won!";
+  }
+}
