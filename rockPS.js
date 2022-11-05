@@ -4,8 +4,8 @@ function getComputerSelection() {
 }
 
 function getUserSelection() {
-  let selection = prompt("Rock, Paper, or Scissors? Choose wisely.");
-
+  let selection = prompt("Rock, Paper, or Scissors? Choose wisely."); //consider input validation
+//can repeat loop if user does not select a proper choice
   let result = selection.toLowerCase(); // this won't work if its null, can add that change later on
   
   //is there a way to have a default value if nothing or blank is typed in?
@@ -55,7 +55,7 @@ function game() {
   for (i = 0; i < 5; i++) {
     let computerSelection = getComputerSelection();
     let playerSelection = convertToNum(getUserSelection()); 
-    
+
     playRound(playerSelection, computerSelection);
   }
 }
