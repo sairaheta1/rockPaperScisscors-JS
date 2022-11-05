@@ -1,3 +1,4 @@
+
 function getComputerSelection() {
   return (Math.floor(Math.random() * 10) % 3) + 1; //generate random number between 0 and 1, multiply by 10 to obtain integer, (mod 3 + 1) to get a number between 1 and 3
 }
@@ -52,9 +53,10 @@ function playRound(playerSelection, computerSelection) {
 function game() {
   let computerSelection = getComputerSelection();
 
-  let playerSelection = convertToNum(getUserSelection); //still need to create conversion function
+  let playerSelection = convertToNum(getUserSelection()); //still need to create conversion function
 
   for (i = 0; i < 5; i++) {
     playRound(playerSelection, computerSelection);
   }
 }
+console.log(game());
