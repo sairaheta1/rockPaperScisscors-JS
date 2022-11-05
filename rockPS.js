@@ -24,29 +24,29 @@ function convertToNum(string) {
 //values will already be converted to their number representations once this function is called
 function playRound(playerSelection, computerSelection) {
   if (playerSelection == computerSelection) {
-    return "You and the computer tied!";
+    console.log("You and the computer tied!"); //create convert to string function to display selection
   }
   else if (playerSelection == 1) {
     if (computerSelection == 3) {
-      return "You won!";
+      console.log("You won! Rock beats scissors!");
     }
   
-    return "Sorry! Looks like the computer beat you :("
+    console.log("Sorry! Paper beats rock. Looks like the computer beat you :(");
   
   }
   else if (playerSelection == 2) {
     if (computerSelection == 1) {
-      return "You won!";
+      console.log("You won! Paper beats rock!");
     }
    
-    return "Sorry! Looks like the computer beat you :(";
+    console.log("Sorry! Scissors beats Paper. Looks like the computer beat you :(");
   
   }
   else {
     if (computerSelection == 1) {
-      return "Sorry! Looks like the computer beat you :(";
+      console.log("Sorry! Rock beats Scissors. Looks like the computer beat you :(");
     }
-    return "You won!";
+    console.log("You won! Scissors beats Paper!");
   }
 }
 
