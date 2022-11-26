@@ -1,0 +1,12 @@
+h1, h2 {
+    text-align: center;
+    margin: 0;
+}
+.selection-container {
+    background: rgb(110, 171, 221);
+}
+.score-container {
+    background: rgb(51, 112, 161);
+    height: 100%;
+    width: 100%;
+}
