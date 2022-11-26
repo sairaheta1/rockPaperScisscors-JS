@@ -3,28 +3,12 @@ h1, h2 {
     text-align: center;
     margin: 0;
 }
-.selection-container {
-    background: rgb(110, 171, 221);
+body {
+    margin: 0;
 }
 .match {
-    display: flex;
-align-items: center;
-justify-content: space-evenly;
+    background: rgb(110, 171, 221);
 }
-.buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-.btn-paper {
-    align-self: flex-end;
-}
-.computer-choice {
-    background: yellow;
-    height: 50px;
-    width: 50px;
-}
-.score-container {
-    background: rgb(51, 112, 161);
-    display: flex;
+.score-board {
+    background: rgb(22, 127, 212);
 }
