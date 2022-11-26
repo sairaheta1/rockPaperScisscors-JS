@@ -13,9 +13,30 @@ h1 {
 body {
     margin: 0;
 }
+/*selection area */
 .match {
     background: rgb(142, 201, 250);
 }
+.selection {
+    
+}
+.btn {
+    height: 150px;
+    width: 150px;
+}
+.versus {
+    height: 150px;
+    width: 150px;
+    font-size: 40px;
+
+}
+.computer-choice {
+    background: rgb(218, 238, 238);
+    height: 150px;
+    width: 150px;
+
+}
+
 .score-board {
     background: rgb(22, 127, 212);
 }
