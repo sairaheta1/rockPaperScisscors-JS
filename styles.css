@@ -1,13 +1,20 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
 h1, h2 {
-    color: rgb(223, 241, 241);
+    color: rgb(218, 238, 238);
     text-align: center;
     margin: 0;
+    font-size: 30px;
+}
+h1 {
+    padding-top: 10px;
 }
 body {
     margin: 0;
 }
 .match {
-    background: rgb(110, 171, 221);
+    background: rgb(142, 201, 250);
 }
 .score-board {
     background: rgb(22, 127, 212);
