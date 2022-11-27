@@ -71,4 +71,28 @@ img {
     background: rgb(22, 127, 212);
     display: flex;
 }
-
+.points {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.point {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(10, 52, 71);
+    border-radius: 50px;
+}
+.winner {
+    background-color: gold;
+}
+.icon {
+    font-size: 100px;
+}
+.user {
+    margin-right: auto;
+    color:rgb(255, 255, 255)
+}
+.robot  {
+    margin-left: auto;
+    color: white;
+}
