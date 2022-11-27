@@ -2,6 +2,8 @@
 ## **Goal**
 - The main goal for this project is to practice programming using JavaScript. I will create a Rock, Paper, Scissors game that is to be played through the browser console. No GUI will be created but will be implemented at a later time.
 
+## Image Use
+- All clipart images are being used freely from clip-artlibrary.com
 ## **Current skills to work on**
 - Basic programming with JavaScript
 ---
