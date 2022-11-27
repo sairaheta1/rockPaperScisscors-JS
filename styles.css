@@ -69,4 +69,6 @@ img {
 
 .score-board {
     background: rgb(22, 127, 212);
+    display: flex;
 }
+
