@@ -23,7 +23,7 @@ body {
     flex: 1 1 0;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 20px;
+    padding: 0px;
     margin-top: 35px;
     
 }
@@ -70,20 +70,23 @@ img {
 .score-board {
     background: rgb(22, 127, 212);
     display: flex;
+    justify-content: space-between;
 }
 .points {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 30px;
 }
 .point {
     height: 50px;
     width: 50px;
     background-color: rgb(10, 52, 71);
-    border-radius: 50px;
+    border-radius: 25px;
 }
+/*for green points, use rbg 144, 206, 125*/
 .winner {
-    background-color: gold;
+    color: gold;
+    font-size: 5ch;
 }
 .icon {
     font-size: 100px;
