@@ -102,6 +102,7 @@ img {
     font-size: 6ch;
 }
 .icon {
+    align-self: center;
     font-size: 9ch;
     padding: 15px 10px;
 }
