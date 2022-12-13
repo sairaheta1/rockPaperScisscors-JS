@@ -8,19 +8,32 @@ h1, h2 {
     padding: 0;
     font-size: 30px;
 }
+footer {
+    background-color: aquamarine;
+    min-height: 10%;
+}
 h1 {
     padding-top: 10px;
 }
-body {
+html, body {
     margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+}
+.game {
+    display: flex;
+    flex-direction: column;
 }
 /*selection area */
 .match {
     background: rgb(142, 201, 250);
+    height: 70%;
 }
 .selections {
     display: flex;
-    flex: 1 1 0;
     align-items: center;
     justify-content: space-between;
     padding: 0px;
@@ -34,16 +47,14 @@ body {
     width: 400px;
 }
 .btn {
-    height: 150px;
+    min-height: 150px;
     width: 150px;
     background: none;
-    border: none;
-    
-    
+    border: none;    
 }
 img {
     width: 100%;
-    height: auto;
+    min-height: auto;
 }
 .paper {
     align-self: flex-end;
@@ -61,16 +72,18 @@ img {
 }
 .computer-choice {
     background: rgb(218, 238, 238);
-    height: 150px;
+    min-height: 150px;
     width: 400px;
     margin-right: 25px;
-
 }
 
 .score-board {
     background: rgb(22, 127, 212);
     display: flex;
     justify-content: space-between;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    min-height: 20%;
 }
 .points {
     display: flex;
@@ -78,24 +91,25 @@ img {
     gap: 30px;
 }
 .point {
-    height: 50px;
+    min-height: 50px;
     width: 50px;
     background-color: rgb(10, 52, 71);
     border-radius: 25px;
 }
 /*for green points, use rbg 144, 206, 125*/
 .winner {
-    color: gold;
-    font-size: 5ch;
+    color: rgb(206, 182, 50);
+    font-size: 6ch;
 }
 .icon {
-    font-size: 100px;
+    font-size: 9ch;
+    padding: 15px 10px;
 }
 .user {
     margin-right: auto;
-    color:rgb(255, 255, 255)
+    color:rgb(6, 21, 43);
 }
 .robot  {
     margin-left: auto;
-    color: white;
+    color: rgb(6, 21, 43);
 }
