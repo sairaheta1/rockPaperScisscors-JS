@@ -1,16 +1,19 @@
 * {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Audiowide",'Courier New', Courier, monospace;
 }
 h1, h2 {
-    color: rgb(218, 238, 238);
+    color: rgb(50, 63, 63);
     text-align: center;
     margin: 0;
     padding: 0;
-    font-size: 30px;
+    font-size: 40px;
 }
 footer {
-    background-color: aquamarine;
-    min-height: 10%;
+    background-color:rgb(142, 201, 250);
+    min-height: 5%;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px 0px;
 }
 h1 {
     padding-top: 10px;
@@ -30,7 +33,7 @@ body {
 /*selection area */
 .match {
     background: rgb(142, 201, 250);
-    height: 70%;
+    min-height: 75%;
 }
 .selections {
     display: flex;
@@ -77,6 +80,7 @@ img {
     margin-right: 25px;
 }
 
+/* score area */
 .score-board {
     background: rgb(22, 127, 212);
     display: flex;
