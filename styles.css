@@ -1,6 +1,7 @@
 header, footer, p, h1, h2, body {
     margin: 0;
 }
+/*FONT AND BACKGROUND COLORS*/
 * {
     font-family: "Audiowide",'Courier New', Courier, monospace;
     color: #12130f;
@@ -22,4 +23,13 @@ header {
 }
 footer {
     background-color: #8f8073;
+}
+
+/*BUTTON SELECTIONS*/ 
+img {
+    height: auto;
+    width: 150px;
+}
+button {
+    background: none;
 }
