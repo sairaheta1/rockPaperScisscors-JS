@@ -32,14 +32,21 @@ img, button {
 }
 button {
     background: none;
+    border-style: none;
 }
 
 .buttons {
     min-height: 300px;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    gap: 20px;
+
 }
 .paper {
     align-self: flex-end;
+}
+/* COMPUTER CHOICE */
+
+.computer-choice {
+    min-height: 175px;
 }
