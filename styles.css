@@ -26,10 +26,20 @@ footer {
 }
 
 /*BUTTON SELECTIONS*/ 
-img {
-    height: auto;
-    width: 150px;
+img, button {
+    max-height: 175px;
+    width: auto;
 }
 button {
     background: none;
+}
+
+.buttons {
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.paper {
+    align-self: flex-end;
 }
