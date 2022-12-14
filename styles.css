@@ -1,122 +1,19 @@
-* {
-    font-family: "Audiowide",'Courier New', Courier, monospace;
-}
-h1, h2 {
-    color: rgb(50, 63, 63);
-    text-align: center;
+header, footer, p, h1, h2, body {
     margin: 0;
-    padding: 0;
-    font-size: 40px;
+}
+* {
+    font-family: ;
+}
+
+header {
+    background-color: #5b8279;
+}
+.match {
+    background-color: #8fcb9b;
+}
+.scoreBoard {
+    background-color: #eae6e5;
 }
 footer {
-    background-color:rgb(142, 201, 250);
-    min-height: 5%;
-    text-align: center;
-    font-size: 20px;
-    padding: 5px 0px;
-}
-h1 {
-    padding-top: 10px;
-}
-html, body {
-    margin: 0;
-    padding: 0;
-}
-body {
-    height: 100vh;
-    width: 100vw;
-}
-.game {
-    display: flex;
-    flex-direction: column;
-}
-/*selection area */
-.match {
-    background: rgb(142, 201, 250);
-    min-height: 75%;
-}
-.selections {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px;
-    margin-top: 35px;
-    
-}
-.buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 400px;
-    margin-left: 30px;
-}
-.btn {
-    min-height: 150px;
-    width: 150px;
-    background: none;
-    border: none;    
-}
-img {
-    width: 100%;
-    min-height: auto;
-}
-.paper {
-    align-self: flex-end;
-}
-.versus {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
-    font-size: 40px;
-    margin: 0;
-    padding: 0;
-    color:rgb(22, 127, 212);
-
-}
-.computer-choice {
-    background: rgb(218, 238, 238);
-    width: 400px;
-    margin-right: 25px;
-}
-
-/* score area */
-.score-board {
-    background: rgb(22, 127, 212);
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    min-height: 20%;
-}
-.points {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-.point {
-    height: 25px;
-    width: 25px;
-    background-color: rgb(10, 52, 71);
-    border-radius: 5px;
-}
-/*for green points, use rbg 144, 206, 125*/
-.winner {
-    color: rgb(206, 182, 50);
-    font-size: 70px;
-}
-.icon {
-    align-self: center;
-    font-size: 70px;
-    padding: 15px 10px;
-}
-.user {
-    margin-right: auto;
-    color:rgb(6, 21, 43);
-}
-.robot  {
-    margin-left: auto;
-    color: rgb(6, 21, 43);
+    background-color: #8f8073;
 }
