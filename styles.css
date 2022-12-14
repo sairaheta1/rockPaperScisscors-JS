@@ -2,14 +2,20 @@ header, footer, p, h1, h2, body {
     margin: 0;
 }
 * {
-    font-family: ;
+    font-family: "Audiowide",'Courier New', Courier, monospace;
+    color: #12130f;
 }
-
+header, footer {
+    text-align: center;
+    font-size: 2em;
+}
 header {
     background-color: #5b8279;
 }
 .match {
     background-color: #8fcb9b;
+    font-size: 1em;
+    text-align: center;
 }
 .scoreBoard {
     background-color: #eae6e5;
