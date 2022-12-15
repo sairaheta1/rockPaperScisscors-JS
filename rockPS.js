@@ -87,6 +87,19 @@ function playRound(playerSelection, computerSelection) {
 
   const match = document.querySelector('.match');
   match.appendChild(results_div);
+  //TODO: if someone reaches five points
+
+  if (compPoints == 5 || playerPoints == 5) {
+    if (userWon(playerPoints)) {
+      //create alert for player winning
+    }
+    else {
+      //create alert for computer winning
+    }
+  }
+}
+function userWon(points) {
+  return points == 5;
 }
 function addPlayerPoint (pointNum) {
   if (pointNum == 5) {
