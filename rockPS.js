@@ -34,29 +34,35 @@ function getComputerSelection() {
 }
 //values will already be converted to their number representations once this function is called
 function playRound(playerSelection, computerSelection) {
+  const div = document.createElement('div');
+  let text;
+
   if (playerSelection == computerSelection) {
-    console.log("You and the computer tied!"); //create convert to string function to display selection
+    text ="You and the computer tied!"; //create convert to string function to display selection
   }
   else if (playerSelection == 1) {
     if (computerSelection == 3) {
-      console.log("You won! Rock beats scissors!");
+      text = "You won! Rock beats scissors!";
     }
   
-    console.log("Sorry! Paper beats rock. Looks like the computer beat you :(");
+    text ="Sorry! Paper beats rock. Looks like the computer beat you :(";
   
   }
   else if (playerSelection == 2) {
     if (computerSelection == 1) {
-      console.log("You won! Paper beats rock!");
+      text= "You won! Paper beats rock!";
     }
    
-    console.log("Sorry! Scissors beats Paper. Looks like the computer beat you :(");
+    text ="Sorry! Scissors beats Paper. Looks like the computer beat you :(";
   
   }
   else {
     if (computerSelection == 1) {
-      console.log("Sorry! Rock beats Scissors. Looks like the computer beat you :(");
+      text ="Sorry! Rock beats Scissors. Looks like the computer beat you :(";
     }
-    console.log("You won! Scissors beats Paper!");
+    text ="You won! Scissors beats Paper!";
   }
+  div.textContent = text;
+
+  const 
 }
