@@ -19,9 +19,7 @@ header {
     font-size: 1em;
     text-align: center;
 }
-.scoreBoard {
-    background-color: #eae6e5;
-}
+
 footer {
     background-color: #8f8073;
 }
@@ -55,10 +53,22 @@ button {
 /*SCORES */
 .point {
     background-color: #12130f;
-    height: 2em;
+    height: 1em;
     width: 2em;
+    border-radius: 15px;
 }
 i {
     color: #5b8279;
     font-size: 3em;
+}
+.scoreBoard {
+    background-color: #eae6e5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.userPoints, .robotPoints {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
