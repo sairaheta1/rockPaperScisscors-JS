@@ -8,7 +8,8 @@ header, footer, p, h1, h2, body {
 }
 header, footer {
     text-align: center;
-    font-size: 2em;
+    font-size: 2.5em;
+    padding: 15px; 
 }
 header {
     background-color: #5b8279;
@@ -49,4 +50,15 @@ button {
 
 .computer-choice {
     min-height: 175px;
+}
+
+/*SCORES */
+.point {
+    background-color: #12130f;
+    height: 2em;
+    width: 2em;
+}
+i {
+    color: #5b8279;
+    font-size: 3em;
 }
