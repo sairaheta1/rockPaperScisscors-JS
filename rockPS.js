@@ -11,7 +11,26 @@ buttons.forEach((button) => {
 
 
 function getComputerSelection() {
-  return (Math.floor(Math.random() * 10) % 3) + 1; //generate random number between 0 and 1, multiply by 10 to obtain integer, (mod 3 + 1) to get a number between 1 and 3
+  compChoice = (Math.floor(Math.random() * 10) % 3) + 1; //generate random number between 0 and 1, multiply by 10 to obtain integer, (mod 3 + 1) to get a number between 1 and 3
+  //update images of computer choice
+  const img = document.createElement('img');
+  //img.style.cssText = ''
+  switch (compChoice) {
+    case 1:
+      img.setAttribute('src', 'images/rock.png');
+      img.setAttribute('alt', 'Clipart of a rock');
+      break;
+    case 2:
+      img.setAttribute('src', 'images/stickyNote.png');
+      img.setAttribute('alt', 'Clipart of a sticky note');
+      break;
+    case 3:
+      img.setAttribute('src', 'images/scissors.png');
+      img.setAttribute('alt', 'Clipart of a pair of scissors');
+      break;
+  }
+  const div = document.querySelector('.computer-choice');
+  div.appendChild(img);
 }
 //values will already be converted to their number representations once this function is called
 function playRound(playerSelection, computerSelection) {
