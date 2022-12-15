@@ -3,18 +3,17 @@ const buttons = document.querySelectorAll('button');
 buttons.forEach((button) => {
   button.addEventListener('click', () => {
     playerSelection = button.id;
+    selection_img = button.querySelector('img');
+    selection_img.style.cssText = 'padding: 10px; border-radius: 10px; border: solid rgb(91, 130, 121) 2px; box-shadow: 10px 10px 2px 1px rgb(91, 130, 121);'
     playRound(playerSelection, getComputerSelection());
   });
 });
-
-
-
 
 function getComputerSelection() {
   compChoice = (Math.floor(Math.random() * 10) % 3) + 1; //generate random number between 0 and 1, multiply by 10 to obtain integer, (mod 3 + 1) to get a number between 1 and 3
   //update images of computer choice
   const img = document.createElement('img');
-  //img.style.cssText = ''
+  
   switch (compChoice) {
     case 1:
       img.setAttribute('src', 'images/rock.png');
@@ -29,6 +28,7 @@ function getComputerSelection() {
       img.setAttribute('alt', 'Clipart of a pair of scissors');
       break;
   }
+  img.style.cssText = 'padding: 10px; border-radius: 10px; border: solid rgb(91, 130, 121) 2px; box-shadow: 10px 10px 2px 1px rgb(91, 130, 121);'
   const div = document.querySelector('.computer-choice');
   div.appendChild(img);
 }
