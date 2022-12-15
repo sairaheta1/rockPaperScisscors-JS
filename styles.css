@@ -7,13 +7,12 @@ header, footer, p, h1, h2, body {
     color: #12130f;
 }
 header, footer {
+    background-color: #5b8279;
     text-align: center;
     font-size: 2.5em;
     padding: 15px; 
 }
-header {
-    background-color: #5b8279;
-}
+
 .match {
     background-color: #8fcb9b;
     font-size: 1em;
@@ -22,6 +21,8 @@ header {
 
 footer {
     background-color: #8f8073;
+    font-size: 1em;
+
 }
 
 /*BUTTON SELECTIONS*/ 
@@ -58,17 +59,27 @@ button {
     border-radius: 15px;
 }
 i {
-    color: #5b8279;
     font-size: 3em;
+    margin: 5px;
 }
 .scoreBoard {
     background-color: #eae6e5;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 10px;
 }
 .userPoints, .robotPoints {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
+}
+.winner {
+    color: rgb(226, 194, 14);
+}
+.icon {
+    color: #5b8279;
+    border: solid #5b8279 3px;
+    border-radius: 15px;
+    padding: 5px;
 }
