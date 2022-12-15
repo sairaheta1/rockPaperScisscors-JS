@@ -1,9 +1,18 @@
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach((button) => {
+  button.addEventListener('click', ()) => {
+    
+  }
+})
+
 
 function getComputerSelection() {
   return (Math.floor(Math.random() * 10) % 3) + 1; //generate random number between 0 and 1, multiply by 10 to obtain integer, (mod 3 + 1) to get a number between 1 and 3
 }
 
 function getUserSelection() {
+  const btn
   let selection = prompt("Rock, Paper, or Scissors? Choose wisely."); //consider input validation
 //can repeat loop if user does not select a proper choice
   let result = selection.toLowerCase(); // this won't work if its null, can add that change later on
@@ -52,11 +61,9 @@ function playRound(playerSelection, computerSelection) {
 
 function game() {
 
-  for (i = 0; i < 5; i++) {
-    let computerSelection = getComputerSelection();
-    let playerSelection = convertToNum(getUserSelection()); 
+  let computerSelection = getComputerSelection();
+  let playerSelection = convertToNum(getUserSelection()); 
 
-    playRound(playerSelection, computerSelection);
-  }
+  playRound(playerSelection, computerSelection);
 }
 console.log(game());
