@@ -1,4 +1,5 @@
-let playerPoints, compPoints = 0;
+let playerPoints = 0;
+let compPoints = 0;
 
 const buttons = document.querySelectorAll('button');
 
@@ -46,35 +47,40 @@ function playRound(playerSelection, computerSelection) {
   else if (playerSelection == 1) {
     if (computerSelection == 3) {
       text = "You won! Rock beats scissors!";
-      playerPoints++;
+      playerPoints += 1;
+      addPlayerPoint(playerPoints);
     }
     else {
       text ="Sorry! Paper beats rock. Looks like the computer beat you :(";
-      compPoints++;
+      compPoints+=1;
+      addcompPoint(compPoints);
     }
   
   }
   else if (playerSelection == 2) {
     if (computerSelection == 1) {
       text= "You won! Paper beats rock!";
-      playerPoints++;
+      playerPoints+= 1;
+      addPlayerPoint(playerPoints);
 
     }
     else {
       text ="Sorry! Scissors beats Paper. Looks like the computer beat you :(";
-      compPoints++;
+      compPoints+=1;
+      addcompPoint(compPoints);
     }
   
   }
   else {
     if (computerSelection == 1) {
       text ="Sorry! Rock beats Scissors. Looks like the computer beat you :(";
-      compPoints++;
+      compPoints+=1;
+      addcompPoint(compPoints);
     }
     else {
       text ="You won! Scissors beats Paper!";
-      playerPoints++;
-
+      playerPoints+=1;
+      addPlayerPoint(playerPoints);
     }
   }
   results_div.textContent = text;
@@ -82,5 +88,25 @@ function playRound(playerSelection, computerSelection) {
   const match = document.querySelector('.match');
   match.appendChild(results_div);
 }
-function addPlayerPoint () {
+function addPlayerPoint (pointNum) {
+  if (pointNum == 5) {
+    crown = document.querySelector('.winner');
+    crown.style = 'color: green;'
+  }
+  else {
+    userScoreboard = document.querySelector('.userPoints');
+    point = userScoreboard.querySelector(".p" + pointNum);
+    point.style = 'background-color: green';  
+  }
+}
+function addcompPoint (pointNum) {
+  if (pointNum == 5) {
+    crown = document.querySelector('.winner');
+    crown.style = 'color: red;'
+  }
+  else {
+    robotScoreboard = document.querySelector('.robotPoints');
+    point = robotScoreboard.querySelector(".p" + pointNum);
+    point.style = 'background-color: red';
+  }
 }
