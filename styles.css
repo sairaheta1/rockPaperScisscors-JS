@@ -48,7 +48,8 @@ button {
 /* COMPUTER CHOICE */
 
 .computer-choice {
-    min-height: 175px;
+    min-height: 200px;
+    padding: 35px 0px;
 }
 
 /*SCORES */
