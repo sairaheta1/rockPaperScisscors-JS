@@ -31,10 +31,11 @@ function getComputerSelection() {
   img.style.cssText = 'padding: 10px; border-radius: 10px; border: solid rgb(91, 130, 121) 2px; box-shadow: 10px 10px 2px 1px rgb(91, 130, 121);'
   const div = document.querySelector('.computer-choice');
   div.appendChild(img);
+  return compChoice;
 }
 //values will already be converted to their number representations once this function is called
 function playRound(playerSelection, computerSelection) {
-  const div = document.createElement('div');
+  const results_div = document.createElement('div');
   let text;
 
   if (playerSelection == computerSelection) {
@@ -45,7 +46,7 @@ function playRound(playerSelection, computerSelection) {
       text = "You won! Rock beats scissors!";
     }
   
-    text ="Sorry! Paper beats rock. Looks like the computer beat you :(";
+    text ="Sorry! Scissors beats rock. Looks like the computer beat you :(";
   
   }
   else if (playerSelection == 2) {
@@ -62,7 +63,8 @@ function playRound(playerSelection, computerSelection) {
     }
     text ="You won! Scissors beats Paper!";
   }
-  div.textContent = text;
+  results_div.textContent = text;
 
-  const 
+  const match = document.querySelector('.match');
+  match.appendChild(results_div);
 }
