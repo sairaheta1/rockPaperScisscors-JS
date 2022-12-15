@@ -9,7 +9,7 @@ header, footer, p, h1, h2, body {
 header, footer {
     background-color: #5b8279;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2em;
     padding: 15px; 
 }
 
@@ -18,16 +18,23 @@ header, footer {
     font-size: 1em;
     text-align: center;
 }
-
+.versus {
+    font-size: 2em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+h1, h2 {
+    padding: 5px;
+    margin-bottom: 5px;
+}
 footer {
     background-color: #8f8073;
     font-size: 1em;
-
 }
 
 /*BUTTON SELECTIONS*/ 
 img, button {
-    max-height: 175px;
+    max-height: 100px;
     width: auto;
 }
 button {
@@ -36,7 +43,7 @@ button {
 }
 
 .buttons {
-    min-height: 300px;
+    min-height: 250px;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -48,8 +55,10 @@ button {
 /* COMPUTER CHOICE */
 
 .computer-choice {
-    min-height: 200px;
-    padding: 35px 0px;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*SCORES */
