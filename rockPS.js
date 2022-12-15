@@ -1,3 +1,5 @@
+let playerPoints, compPoints = 0;
+
 const buttons = document.querySelectorAll('button');
 
 buttons.forEach((button) => {
@@ -44,31 +46,41 @@ function playRound(playerSelection, computerSelection) {
   else if (playerSelection == 1) {
     if (computerSelection == 3) {
       text = "You won! Rock beats scissors!";
+      playerPoints++;
     }
     else {
       text ="Sorry! Paper beats rock. Looks like the computer beat you :(";
+      compPoints++;
     }
   
   }
   else if (playerSelection == 2) {
     if (computerSelection == 1) {
       text= "You won! Paper beats rock!";
+      playerPoints++;
+
     }
     else {
       text ="Sorry! Scissors beats Paper. Looks like the computer beat you :(";
+      compPoints++;
     }
   
   }
   else {
     if (computerSelection == 1) {
       text ="Sorry! Rock beats Scissors. Looks like the computer beat you :(";
+      compPoints++;
     }
     else {
       text ="You won! Scissors beats Paper!";
+      playerPoints++;
+
     }
   }
   results_div.textContent = text;
 
   const match = document.querySelector('.match');
   match.appendChild(results_div);
+}
+function addPlayerPoint () {
 }
