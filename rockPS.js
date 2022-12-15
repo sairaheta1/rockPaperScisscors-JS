@@ -45,23 +45,27 @@ function playRound(playerSelection, computerSelection) {
     if (computerSelection == 3) {
       text = "You won! Rock beats scissors!";
     }
-  
-    text ="Sorry! Scissors beats rock. Looks like the computer beat you :(";
+    else {
+      text ="Sorry! Paper beats rock. Looks like the computer beat you :(";
+    }
   
   }
   else if (playerSelection == 2) {
     if (computerSelection == 1) {
       text= "You won! Paper beats rock!";
     }
-   
-    text ="Sorry! Scissors beats Paper. Looks like the computer beat you :(";
+    else {
+      text ="Sorry! Scissors beats Paper. Looks like the computer beat you :(";
+    }
   
   }
   else {
     if (computerSelection == 1) {
       text ="Sorry! Rock beats Scissors. Looks like the computer beat you :(";
     }
-    text ="You won! Scissors beats Paper!";
+    else {
+      text ="You won! Scissors beats Paper!";
+    }
   }
   results_div.textContent = text;
 
