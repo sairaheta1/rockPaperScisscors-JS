@@ -94,15 +94,25 @@ function playRound(playerSelection, computerSelection) {
       addPlayerPoint(playerPoints);
     }
   }
-  // if (compPoints == 5 || playerPoints == 5) {
-  //   if (userWon(playerPoints)) {
-  //     //create alert for player winning & add option for playing again
-  //   }
-  //   else {
-  //     //create alert for computer winning
-  //   }
-  //   return;
-  // }
+  if (compPoints == 5 || playerPoints == 5) {
+    if (userWon(playerPoints)) {
+      swal("Victory is yours!", "Play again?", "success", {
+        button: 'Ok',
+      }).then(function() {
+        location.reload;
+      });
+      //create alert for player winning & add option for playing again
+    }
+    else {
+      swal("The robots have won again...", "Play again?", "error", {
+        button: "Ok",
+      }).then(function () {
+        location.reload();
+    });
+      //create alert for computer winning
+    }
+    return;
+  }
 
   results_div.textContent = text;
 
