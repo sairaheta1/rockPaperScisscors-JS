@@ -41,6 +41,13 @@ button {
     background: none;
     border-style: none;
 }
+button:hover {
+    padding: 10px;
+    border-radius: 10px;
+    border: solid rgb(91, 130, 121) 2px;
+    box-shadow: 10px 10px 2px 1px rgb(91, 130, 121);
+}
+
 
 .buttons {
     min-height: 250px;
