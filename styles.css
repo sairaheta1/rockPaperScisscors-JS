@@ -41,7 +41,7 @@ button {
     background: none;
     border-style: none;
 }
-button:hover {
+button > img:hover {
     padding: 10px;
     border-radius: 10px;
     border: solid rgb(91, 130, 121) 2px;
