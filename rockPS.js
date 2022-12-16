@@ -1,6 +1,10 @@
 let playerPoints = 0;
 let compPoints = 0;
 
+const match = document.querySelector('.match');
+const results_div = document.createElement('div');
+match.appendChild(results_div);
+
 const buttons = document.querySelectorAll('button');
 
 buttons.forEach((button) => {
@@ -45,7 +49,7 @@ function getComputerSelection() {
 }
 //values will already be converted to their number representations once this function is called
 function playRound(playerSelection, computerSelection) {
-  const results_div = document.createElement('div');
+ 
   let text;
 
   if (playerSelection == computerSelection) {
@@ -102,8 +106,7 @@ function playRound(playerSelection, computerSelection) {
 
   results_div.textContent = text;
 
-  const match = document.querySelector('.match');
-  match.appendChild(results_div);
+
   //TODO: if someone reaches five points
 
   
