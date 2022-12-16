@@ -7,7 +7,6 @@ buttons.forEach((button) => {
   button.addEventListener('click', () => {
     playerSelection = button.id;
     selection_img = button.querySelector('img');
-    selection_img.style.cssText = 'padding: 10px; border-radius: 10px; border: solid rgb(91, 130, 121) 2px; box-shadow: 10px 10px 2px 1px rgb(91, 130, 121);'
     playRound(playerSelection, getComputerSelection());
   });
 });
@@ -83,23 +82,26 @@ function playRound(playerSelection, computerSelection) {
       addPlayerPoint(playerPoints);
     }
   }
+  // if (compPoints == 5 || playerPoints == 5) {
+  //   if (userWon(playerPoints)) {
+  //     //create alert for player winning & add option for playing again
+  //   }
+  //   else {
+  //     //create alert for computer winning
+  //   }
+  //   return;
+  // }
+
   results_div.textContent = text;
 
   const match = document.querySelector('.match');
   match.appendChild(results_div);
   //TODO: if someone reaches five points
 
-  if (compPoints == 5 || playerPoints == 5) {
-    if (userWon(playerPoints)) {
-      //create alert for player winning
-    }
-    else {
-      //create alert for computer winning
-    }
-  }
+  
 }
 function userWon(points) {
-  return points == 5;
+  return (points == 5);
 }
 function addPlayerPoint (pointNum) {
   if (pointNum == 5) {
