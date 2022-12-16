@@ -99,9 +99,8 @@ function playRound(playerSelection, computerSelection) {
       swal("Victory is yours!", "Play again?", "success", {
         button: 'Ok',
       }).then(function() {
-        location.reload;
+        location.reload();
       });
-      //create alert for player winning & add option for playing again
     }
     else {
       swal("The robots have won again...", "Play again?", "error", {
@@ -109,15 +108,12 @@ function playRound(playerSelection, computerSelection) {
       }).then(function () {
         location.reload();
     });
-      //create alert for computer winning
     }
     return;
   }
 
   results_div.textContent = text;
 
-
-  //TODO: if someone reaches five points
 
   
 }
