@@ -32,6 +32,14 @@ function getComputerSelection() {
   }
   img.style.cssText = 'padding: 10px; border-radius: 10px; border: solid rgb(91, 130, 121) 2px; box-shadow: 10px 10px 2px 1px rgb(91, 130, 121);'
   const div = document.querySelector('.computer-choice');
+  
+  try {
+    div.firstChild.remove();
+  }
+  catch (e) {
+    console.log(e)
+  }
+
   div.appendChild(img);
   return compChoice;
 }
