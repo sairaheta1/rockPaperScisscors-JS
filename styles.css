@@ -9,12 +9,14 @@ header, footer, p, h1, h2, body {
 }
 body {
     background-color: #8fcb9b;
+    max-width: 100vw;
 }
 header, footer {
     background-color: #5b8279;
     text-align: center;
     font-size: 2em;
     padding: 15px; 
+    max-width: 100vw;
 }
 
 .match {
@@ -78,9 +80,10 @@ button > img:hover {
 
 /*SCORES */
 .point {
+    flex-grow: 2;
     background-color: #12130f;
     height: 1em;
-    width: 2em;
+    width: 1em;
     border-radius: 15px;
 }
 i {
