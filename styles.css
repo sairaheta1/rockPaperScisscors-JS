@@ -16,9 +16,8 @@ header, footer {
     text-align: center;
     font-size: 2em;
     padding: 15px; 
-    max-width: 100vw;
+    width: 100%;
 }
-
 .match {
     font-size: 1em;
     text-align: center;
@@ -36,7 +35,6 @@ h1, h2 {
 footer {
     background-color: #8f8073;
     font-size: 1em;
-    padding: 0;
 }
 
 /*BUTTON SELECTIONS*/ 
