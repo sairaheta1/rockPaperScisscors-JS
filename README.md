@@ -1,6 +1,9 @@
 # **Rock, Paper, Scissors Game**
 ## **Goal**
-- The main goal for this project is to practice programming using JavaScript while improving my Web Design skills. I utilized a new JavaScript library, SweetAlert, and heavily focused on a Flex layout for the CSS design. I initially started the game with no UI, solely playing through the console with window prompts for user input and console statements for results. I was then able to create a simple UI for the game and incorporated DOM manipulation to my JavaScript.
+- The main goal for this project is to practice programming using JavaScript while improving my Web Design skills. I utilized a new JavaScript library, SweetAlert, and heavily focused on a Flex layout for the CSS design. I initially started the game with no UI, solely playing through the console with window prompts for user input and console statements for results. I was then able to create a simple UI for the game and incorporated DOM manipulation to my JavaScript. 
+
+### *Note:*
+- This website is not meant to be responsive at this moment
 
 ## **Image Use**
 - All clipart images are being used freely from [clip-artlibrary.com](http://clipart-library.com/)
