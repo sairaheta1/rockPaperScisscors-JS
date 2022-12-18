@@ -1,10 +1,14 @@
 header, footer, p, h1, h2, body {
     margin: 0;
+    padding: 0;
 }
 /*FONT AND BACKGROUND COLORS*/
 * {
     font-family: "Audiowide",'Courier New', Courier, monospace;
     color: #12130f;
+}
+body {
+    background-color: #8fcb9b;
 }
 header, footer {
     background-color: #5b8279;
@@ -14,9 +18,9 @@ header, footer {
 }
 
 .match {
-    background-color: #8fcb9b;
     font-size: 1em;
     text-align: center;
+    
 }
 .versus {
     font-size: 2em;
@@ -30,9 +34,13 @@ h1, h2 {
 footer {
     background-color: #8f8073;
     font-size: 1em;
+    padding: 0;
 }
 
 /*BUTTON SELECTIONS*/ 
+.selections {
+    margin-top: 50px;
+}
 img, button {
     max-height: 100px;
     width: auto;
@@ -62,7 +70,7 @@ button > img:hover {
 /* COMPUTER CHOICE */
 
 .computer-choice {
-    min-height: 150px;
+    min-height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,7 +88,6 @@ i {
     margin: 5px;
 }
 .scoreBoard {
-    background-color: #eae6e5;
     display: flex;
     align-items: center;
     justify-content: space-between;
